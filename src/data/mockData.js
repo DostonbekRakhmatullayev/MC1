@@ -193,7 +193,7 @@ export const brandStats = [
 ];
 
 export const contactInfo = {
-  phone: "+998 90 123 45 67",
+  phone: "+998 99 374 69 20",
   email: "info@meatcity.uz",
   website: "www.meatcity.uz",
   address: "Toshkent sh., Chilonzor tumani, Amir Temur ko'chasi 15-uy",
@@ -202,7 +202,7 @@ export const contactInfo = {
     weekend: "10:00 - 20:00"
   },
   social: {
-    telegram: "@meatcity_uz",
-    instagram: "@meatcity_official"
+    telegram: "@Dostonbek_Rahmatulayev",
+    instagram: "@rahmatulayev_dostonbek"
   }
 };
