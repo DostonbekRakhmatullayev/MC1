@@ -150,7 +150,6 @@ const ProductsSection = () => {
                       <CardContent className="p-4 sm:p-6 space-y-4">
                         <div className="flex items-center justify-between">
                           <div>
-                            <div className="text-xl sm:text-2xl font-bold text-meat-red">{product.price}</div>
                             <div className="text-sm text-gray-500">{product.weight}</div>
                           </div>
                           <Badge

@@ -135,6 +135,7 @@ const Footer = () => {
 
             <div className="pt-4 border-t border-gray-700">
               <p className="text-gold font-semibold mb-2">Ijtimoiy tarmoqlar:</p>
+              
               <p className="text-gray-300 text-sm">{contactInfo.social.telegram}</p>
               <p className="text-gray-300 text-sm">{contactInfo.social.instagram}</p>
             </div>

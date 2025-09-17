@@ -53,12 +53,12 @@ const OrderSection = () => {
       <div className="container mx-auto px-4 relative z-10">
         {/* Header */}
         <div className={`text-center mb-12 transform transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
-          <div className="inline-flex items-center space-x-2 px-6 py-3 bg-orange-500 text-white rounded-full mb-6 font-semibold">
+          <div className="inline-flex items-center space-x-2 px-6 py-3 bg-red-700 text-white rounded-full mb-6 font-semibold">
             <MessageSquare className="w-5 h-5" />
             <span>Biz bilan Bog'lanish</span>
           </div>
 
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6 leading-tight">
+          <h2 className="text-4xl md:text-5xl  font-bold text-gray-800 mb-6 leading-tight">
             Savollaringiz bo'lsa yoki buyurtma bermoxchi bo'lsangiz, biz bilan bog'laning. Har 
             doim sizning xizmatingizdamiz!
           </h2>
@@ -69,8 +69,8 @@ const OrderSection = () => {
           {/* Address */}
           <Card className={`bg-white shadow-lg border-0 hover-lift transform transition-all duration-1000 delay-200 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
             <CardHeader className="pb-4">
-              <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <MapPin className="w-8 h-8 text-orange-500" />
+              <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <MapPin className="w-8 h-8 text-red-800" />
               </div>
               <CardTitle className="text-center text-gray-800 text-xl">Manzil</CardTitle>
             </CardHeader>
@@ -84,8 +84,8 @@ const OrderSection = () => {
           {/* Phone */}
           <Card className={`bg-white shadow-lg border-0 hover-lift transform transition-all duration-1000 delay-400 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
             <CardHeader className="pb-4">
-              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Phone className="w-8 h-8 text-green-500" />
+              <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Phone className="w-8 h-8 text-red-600" />
               </div>
               <CardTitle className="text-center text-gray-800 text-xl">Telefon</CardTitle>
             </CardHeader>
@@ -93,7 +93,7 @@ const OrderSection = () => {
               <p className="text-gray-600 mb-4">+998 99 374 69 20</p>
               <Button
                 onClick={handlePhoneCall}
-                className="w-full bg-green-500 hover:bg-green-600 text-white py-2 rounded-lg transform hover:scale-105 transition-all duration-200"
+                className="w-full bg-red-500 hover:bg-green-600 text-white py-2 rounded-lg transform hover:scale-105 transition-all duration-200"
               >
                 Qo'ng'iroq qilish
               </Button>
@@ -104,7 +104,7 @@ const OrderSection = () => {
           <Card className={`bg-white shadow-lg border-0 hover-lift transform transition-all duration-1000 delay-600 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
             <CardHeader className="pb-4">
               <div className="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Mail className="w-8 h-8 text-pink-500" />
+                <Mail className="w-8 h-8 text-red-600" />
               </div>
               <CardTitle className="text-center text-gray-800 text-xl">Email</CardTitle>
             </CardHeader>
@@ -119,7 +119,7 @@ const OrderSection = () => {
           <Card className={`bg-white shadow-lg border-0 hover-lift transform transition-all duration-1000 delay-800 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
             <CardHeader className="pb-4">
               <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Clock className="w-8 h-8 text-purple-500" />
+                <Clock className="w-8 h-8 text-red-600" />
               </div>
               <CardTitle className="text-center text-gray-800 text-xl">Ish vaqti</CardTitle>
             </CardHeader>
@@ -175,8 +175,8 @@ const OrderSection = () => {
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all resize-none"
                 ></textarea>
               </div>
-              
-              <Button className="w-full bg-orange-500 hover:bg-orange-600 text-white py-3 text-lg font-semibold rounded-lg transform hover:scale-105 transition-all duration-200">
+
+              <Button className="w-full bg-red-700 hover:bg-red-600 text-white py-3 text-lg font-semibold rounded-lg transform hover:scale-105 transition-all duration-200">
                 <Send className="w-5 h-5 mr-2" />
                 Xabar Yuborish
               </Button>
@@ -186,7 +186,7 @@ const OrderSection = () => {
           {/* Social Media and Additional Info */}
           <div className={`space-y-8 transform transition-all duration-1000 delay-1200 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
             {/* Social Media Card */}
-            <Card className="bg-orange-500 text-white shadow-xl border-0">
+            <Card className="bg-red-700 text-white shadow-xl border-0">
               <CardHeader>
                 <CardTitle className="text-2xl text-white flex items-center">
                   <Send className="w-6 h-6 mr-2" />
@@ -217,7 +217,7 @@ const OrderSection = () => {
             </Card>
 
             {/* CTA Banner */}
-            <div className="bg-gradient-to-r from-yellow-400 via-orange-400 to-red-400 rounded-2xl p-8 text-center shadow-xl">
+            <div className=" bg-red-700 rounded-2xl p-8 text-center shadow-xl">
               <h3 className="text-2xl font-bold text-white mb-4">
                 🍖 Haqiqiy lazzatni hoziroq sinang! 🍖
               </h3>
@@ -227,7 +227,7 @@ const OrderSection = () => {
               <Button
                 onClick={handlePhoneCall}
                 size="lg"
-                className={`bg-white text-orange-500 hover:bg-gray-100 font-bold px-8 py-4 text-lg transform hover:scale-110 transition-all duration-300 shadow-lg ${isPulsing ? 'animate-pulse' : ''}`}
+                className={`bg-white text-orange-500 hover:bg-gray-100 font-bold px-8 py-4 text-lg transform hover:scale-110 transition-all duration-300 shadow-lg `}
               >
                 <Phone className="w-6 h-6 mr-2" />
                 +998 99 374 69 20

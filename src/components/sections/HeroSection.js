@@ -94,12 +94,12 @@ const HeroSection = () => {
         </div>
         
         {/* Scroll indicator - Hidden on small mobile */}
-        <div className={`absolute bottom-4 sm:bottom-8 left-1/2 transform -translate-x-1/2 transition-all duration-1000 delay-1000 ${isLoaded ? 'opacity-100' : 'opacity-0'} hidden sm:block`}>
+        {/* <div className={`absolute bottom-4 sm:bottom-8 left-1/2 transform -translate-x-1/2 transition-all duration-1000 delay-1000 ${isLoaded ? 'opacity-100' : 'opacity-0'} hidden sm:block`}>
           <div className="flex flex-col items-center animate-bounce">
             <span className="text-gray-500 text-xs sm:text-sm mb-2">Pastga suring</span>
             <ArrowDown className="w-4 sm:w-6 h-4 sm:h-6 text-gray-500" />
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

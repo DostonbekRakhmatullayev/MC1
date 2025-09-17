@@ -1,3 +1,4 @@
+import logo from "src/assets/logo.png"
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "../ui/button";
@@ -16,18 +17,20 @@ const Header = () => {
         <nav className="flex items-center justify-between">
           {/* Logo with actual image */}
           <div className="flex items-center space-x-3">
-            <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-md border-2 border-meat-red">
+            {/* <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-md border-2 border-meat-red"> */}
               <img 
-                src="https://customer-assets.emergentagent.com/job_gourmet-sausage/artifacts/uztqy839_8385cc73-b2cb-4e57-9dd9-362bf2fe69a8_removalai_preview.png"
+                src={logo}
                 alt="Meat City Logo"
-                className="w-8 h-8 object-contain"
+                className=" object-contain"
+                width={70}
+                height={70}
               />
-            </div>
+            {/* </div> */}
             <div>
               <h1 className="text-2xl font-bold text-meat-red tracking-tight">
                 MEAT CITY
               </h1>
-              <p className="text-xs text-gold font-medium">Premium kolbasa shahri</p>
+              {/* <p className="text-xs text-gold font-medium">Premium kolbasa shahri</p> */}
             </div>
           </div>
 
