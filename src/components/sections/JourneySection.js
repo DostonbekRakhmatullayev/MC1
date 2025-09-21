@@ -63,6 +63,7 @@ const JourneySection = () => {
         <div className="absolute bottom-0 right-1/4 w-24 sm:w-48 h-24 sm:h-48 bg-gold rounded-full"></div>
       </div>
 
+
       <div className="container mx-auto px-4 relative z-10">
         {/* Section Header */}
         <div className={`text-center mb-12 sm:mb-16 transform transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>

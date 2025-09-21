@@ -93,7 +93,7 @@ const OrderSection = () => {
               <p className="text-gray-600 mb-4">+998 99 374 69 20</p>
               <Button
                 onClick={handlePhoneCall}
-                className="w-full bg-red-500 hover:bg-green-600 text-white py-2 rounded-lg transform hover:scale-105 transition-all duration-200"
+                className="w-full bg-red-500 hover:bg-red-400 text-white py-2 rounded-lg transform hover:scale-105 transition-all duration-200"
               >
                 Qo'ng'iroq qilish
               </Button>

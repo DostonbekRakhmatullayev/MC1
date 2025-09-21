@@ -12,7 +12,7 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gold/20 shadow-sm">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-red-700 backdrop-blur-md border-b border-gold/20 shadow-sm">
       <div className="container mx-auto px-4 py-3">
         <nav className="flex items-center justify-between">
           {/* Logo with actual image */}
@@ -21,13 +21,13 @@ const Header = () => {
               <img 
                 src={logo}
                 alt="Meat City Logo"
-                className=" object-contain"
+                className=" object-contain rounded-full border-2 bg-white/95 border-white w-[70px] h-[70px] shadow-md"
                 width={70}
                 height={70}
               />
             {/* </div> */}
             <div>
-              <h1 className="text-2xl font-bold text-meat-red tracking-tight">
+              <h1 className="text-2xl font-bold text-meat-white tracking-tight">
                 MEAT CITY
               </h1>
               {/* <p className="text-xs text-gold font-medium">Premium kolbasa shahri</p> */}
@@ -36,42 +36,37 @@ const Header = () => {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
-            <button 
-              onClick={() => scrollToSection("hero")}
-              className="text-gray-700 hover:text-meat-red transition-colors font-medium text-sm"
-            >
-              Bosh sahifa
-            </button>
+      <button 
+  onClick={() => scrollToSection("hero")}
+  className=" text-white  hover:text-red transition-colors font-medium text-sm px-4 py-2 rounded-lg"
+>
+  Bosh sahifa
+</button>
             <button 
               onClick={() => scrollToSection("products")}
-              className="text-gray-700 hover:text-meat-red transition-colors font-medium text-sm"
+               className=" text-white  hover:text-red transition-colors font-medium text-sm px-4 py-2 rounded-lg"
             >
               Mahsulotlar
             </button>
             <button 
               onClick={() => scrollToSection("journey")}
-              className="text-gray-700 hover:text-meat-red transition-colors font-medium text-sm"
+              className=" text-white  hover:text-red transition-colors font-medium text-sm px-4 py-2 rounded-lg"
             >
               Bizning yo'limiz
             </button>
             <button 
               onClick={() => scrollToSection("about")}
-              className="text-gray-700 hover:text-meat-red transition-colors font-medium text-sm"
+               className=" text-white  hover:text-red transition-colors font-medium text-sm px-4 py-2 rounded-lg"
             >
               Biz haqimizda
             </button>
-            <button 
-              onClick={() => scrollToSection("contact")}
-              className="text-gray-700 hover:text-meat-red transition-colors font-medium text-sm"
-            >
-              Aloqa
-            </button>
             <Button 
               onClick={() => scrollToSection("contact")}
-              className="bg-meat-red hover:bg-meat-red/90 text-white px-6 py-2 text-sm font-semibold shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-200"
+               className="bg-meat-red hover:bg-meat-red/90 text-white px-6 py-2 text-sm font-semibold shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-200"
             >
-              Buyurtma berish
+              Aloqa
             </Button>
+            
           </div>
 
           {/* Mobile Menu Button */}
@@ -87,7 +82,7 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden mt-4 py-4 border-t border-gold/20 bg-white/95 backdrop-blur-sm rounded-lg shadow-lg">
+          <div className="md:hidden mt-4 py-4 border-t border-gold/20 bg-white/90 backdrop-blur-sm rounded-lg shadow-lg">
             <div className="flex flex-col space-y-4 px-4">
               <button 
                 onClick={() => scrollToSection("hero")}

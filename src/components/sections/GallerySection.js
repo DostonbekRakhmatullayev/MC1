@@ -186,7 +186,7 @@ const GallerySection = () => {
 
         {/* Bottom Text */}
         <div className={`text-center mt-12 transform transition-all duration-1000 delay-700 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
-          <div className="bg-gradient-to-r from-meat-red to-gold text-white rounded-2xl p-8 max-w-4xl mx-auto">
+          <div className="bg-gradient-to-r from-meat-red to-gold text-red rounded-2xl p-8 max-w-4xl mx-auto">
             <h3 className="text-2xl font-bold mb-4">Har bir kolbasa - san'at asari!</h3>
             <p className="text-lg opacity-90">
               Bizning mahsulotlarimizning har biri diqqat bilan tanilgan ingredientlar va 

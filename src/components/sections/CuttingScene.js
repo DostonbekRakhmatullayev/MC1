@@ -23,7 +23,7 @@ const CuttingScene = () => {
   }, []);
 
   return (
-    <section id="cutting-scene" className="section-padding bg-gradient-to-br from-gray-900 to-gray-800 relative overflow-hidden">
+    <section id="cutting-scene" className="section-padding bg-gradient-to-br from-red-900 to-red-800 relative overflow-hidden">
       {/* Background effects */}
       <div className="absolute inset-0 bg-gradient-to-r from-meat-red/10 to-gold/10"></div>
       
@@ -64,15 +64,23 @@ const CuttingScene = () => {
           </div>
 
           {/* Right side - Cutting animation */}
-          <div className={`transform transition-all duration-1000 delay-300 ${isVisible ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'}`}>
-            <div className="relative bg-white/5 backdrop-blur-sm rounded-3xl p-8 shadow-2xl">
-              {/* Cutting board */}
-      <video width="200" height="600" controls>
-        <source src={myVideo} type="video/mp4" />
-        Sizning brauzeringiz video qo‘llab-quvvatlamaydi.
-      </video>
-            </div>
-          </div>
+          <div
+  className={`transform transition-all duration-1000 delay-300 ${
+    isVisible ? "translate-x-0 opacity-100" : "translate-x-8 opacity-0"
+  }`}
+>
+  <div className="relative bg-white/5 backdrop-blur-sm rounded-3xl p-8 shadow-2xl">
+    {/* Cutting board */}
+    <video
+      className="w-full h-80 rounded-2xl object-cover"
+      controls
+    >
+      <source src={myVideo} type="video/mp4" />
+      Sizning brauzeringiz video qo‘llab-quvvatlamaydi.
+    </video>
+  </div>
+</div>
+
         </div>
       </div>
     </section>

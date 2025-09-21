@@ -19,7 +19,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-cream via-cream to-gold/10 pt-20 pb-8">
+    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-red-900 from-cream via-cream to-gold/10 pt-20 pb-8">
       {/* Background Animation */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-1/4 left-1/4 w-16 sm:w-32 h-16 sm:h-32 bg-meat-red rounded-full animate-pulse"></div>
@@ -53,7 +53,7 @@ const HeroSection = () => {
             <Star className="w-4 sm:w-6 h-4 sm:h-6 text-gold fill-current" />
           </div>
           
-          <h1 className="text-4xl sm:text-6xl lg:text-8xl font-bold text-meat-red mb-4 sm:mb-6 tracking-tight">
+          <h1 className="text-4xl sm:text-6xl lg:text-8xl font-bold text-red-50 mb-4 sm:mb-6 tracking-tight">
             MEAT CITY
           </h1>
           
@@ -66,7 +66,7 @@ const HeroSection = () => {
           </p>
           
           <div className="max-w-3xl mx-auto mb-8 sm:mb-12 px-4">
-            <p className="text-sm sm:text-lg text-gray-700 leading-relaxed">
+            <p className="text-sm sm:text-lg text-gray-100 leading-relaxed">
               Biz har bir kolbasani eng sifatli go'sht, tabiiy ziravorlar va asrlar davomida 
               sinovdan o'tgan retseptlar asosida tayyorlaymiz. Bu shunchaki kolbasa emas — 
               bu ta'm dunyosiga sayohat.

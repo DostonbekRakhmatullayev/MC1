@@ -81,12 +81,12 @@ const ProductsSection = () => {
         {/* Category Tabs */}
         <div className={`transform transition-all duration-1000 delay-300 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
           <Tabs value={activeCategory} onValueChange={setActiveCategory} className="w-full">
-            <TabsList className="grid w-full grid-cols-2 lg:grid-cols-4 mb-8 bg-white shadow-lg p-2 rounded-2xl">
+            <TabsList className="grid w-full grid-cols-2 lg:grid-cols-4 bg-white shadow-lg p-2 rounded-2xl h-full">
               {productCategories.map((category) => (
                 <TabsTrigger
                   key={category.id}
                   value={category.id.toString()}
-                  className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-2 p-3 sm:p-4 rounded-xl data-[state=active]:bg-meat-red data-[state=active]:text-white transition-all duration-300 text-xs sm:text-sm"
+                  className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-2 p-3 sm:p-4 rounded-xl data-[state=active]:bg-meat-red data-[state=active]:text-black transition-all duration-300 text-xs sm:text-sm"
                 >
                   <span className="text-lg sm:text-2xl">{category.icon}</span>
                   <div className="text-center sm:text-left">
@@ -131,7 +131,7 @@ const ProductsSection = () => {
                         )}
                       </div>
                       
-                      <CardHeader className={`bg-gradient-to-r ${category.color} text-white p-4 sm:p-6`}>
+                      <CardHeader className={`bg-stone-200 ${category.color} text-black p-4 sm:p-6`}>
                         <div className="flex items-center justify-between">
                           <CardTitle className="text-lg sm:text-xl font-bold">{product.name}</CardTitle>
                           <div className="flex items-center space-x-2">
@@ -142,7 +142,7 @@ const ProductsSection = () => {
                             )}
                           </div>
                         </div>
-                        <CardDescription className="text-white/90 text-sm sm:text-base">
+                        <CardDescription className="text-slate-700 text-sm sm:text-base">
                           {product.description}
                         </CardDescription>
                       </CardHeader>
@@ -180,7 +180,7 @@ const ProductsSection = () => {
                           disabled={!product.inStock}
                           className={`w-full py-2 sm:py-3 font-semibold transition-all duration-300 text-sm sm:text-base ${
                             product.inStock
-                              ? "bg-meat-red hover:bg-meat-red/90 text-white hover:scale-105"
+                              ? "bg-meat-red hover:bg-meat-red/90 text-black hover:scale-105"
                               : "bg-gray-300 text-gray-500 cursor-not-allowed"
                           }`}
                         >
@@ -193,17 +193,7 @@ const ProductsSection = () => {
                 </div>
 
                 {/* Category Info */}
-                <div className="mt-8 sm:mt-12 text-center bg-white/50 backdrop-blur-sm rounded-2xl p-6 sm:p-8">
-                  <div className="flex items-center justify-center space-x-2 mb-4">
-                    <Clock className="w-4 h-4 sm:w-5 sm:h-5 text-meat-red" />
-                    <span className="text-gray-700 font-medium text-sm sm:text-base">
-                      Buyurtmalar: {contactInfo.workingHours.weekdays} (Dushanba-Juma)
-                    </span>
-                  </div>
-                  <p className="text-gray-600 text-sm">
-                    Barcha mahsulotlar yangi tayyorlanadi. Buyurtmani olish uchun qo'ng'iroq qiling!
-                  </p>
-                </div>
+               
               </TabsContent>
             ))}
           </Tabs>
